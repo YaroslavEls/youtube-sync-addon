@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    width: 300px;
+    height: 400px;
+    background-color: #cacaca;
+}
+
+.howto {
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-inline: auto;
+    bottom: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background-color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.heading .connection {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.heading .connection .circle {
+    width: 14px;
+    height: 14px;
+    padding: 3px;
+    border-radius: 100%;
+    background-color: rgb(255, 0, 0);
+}
+
+.group {
+    display: none;
+    flex-direction: column;
+    margin: 15px;
+    padding: 12px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.group .join {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.group .text {
+    margin-bottom: 8px;
+}
+
+.group input {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px;
+}
+
+.group input:focus{
+    outline: none;
+}
+
+.group.single {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.group.single .text {
+    margin-bottom: 0;
+}
+
+.group .room-id {
+    font-size: 20px;
+    width: 100%;
+    border-bottom: solid 1px;
+}
+
+.comment {
+    margin: 30px;
+    text-align: center;
+}
+
+.group.active {
+    display: flex
+}
+
+.icon-refresh {
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3E%3Csvg width='20px' height='20px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.06189 13C4.02104 12.6724 4 12.3387 4 12C4 7.58172 7.58172 4 12 4C14.5006 4 16.7332 5.14727 18.2002 6.94416M19.9381 11C19.979 11.3276 20 11.6613 20 12C20 16.4183 16.4183 20 12 20C9.61061 20 7.46589 18.9525 6 17.2916M9 17H6V17.2916M18.2002 4V6.94416M18.2002 6.94416V6.99993L15.2002 7M6 20V17.2916' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    cursor: pointer;
+}
+
+.icon-enter {
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3E%3Csvg width='16px' height='16px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 4V20M4 12H16M16 12L12 8M16 12L12 16' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}

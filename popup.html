@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Sync</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div id="app">
+        <div class="heading">
+            <div>YouTube Sync</div>
+            <div class="connection">
+                <div id="status" class="circle"></div>
+                <div id="refresh" class="icon-refresh" title="Refresh connection"></div>
+            </div>
+        </div>
+
+        <div id="create-group" class="group single">
+            <div class="text">Create room</div>
+            <div class="icon-enter"></div>
+        </div>
+
+        <div id="join-group" class="group">
+            <div id="join-btn" class="join">
+                <div class="text">Join room</div>
+                <div class="icon-enter"></div>
+            </div>
+            
+            <input type="text" id="room-input" placeholder="room id">
+        </div>
+
+        <div id="room-group" class="group">
+            <div class="text">Room</div>
+            <div id="room-id" class="room-id">1235</div>
+        </div>
+
+        <div id="leave-group" class="group single">
+            <div class="text">Leave room</div>
+            <div class="icon-enter"></div>
+        </div>
+
+        <div id="comment" class="comment"></div>
+    </div>
+    <a href="https://github.com/YaroslavEls/youtube-sync-addon" target="_blank" class="howto">How to use?</a>
+    <script src="popup.js"></script>
+</body>
+</html>
