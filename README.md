@@ -8,18 +8,22 @@ Firefox web-extension for synchronous video watching on YouTube.
 3. [Npm dependencies](./package.json)
 
 ## Installation
-1. Install dependencies
+1. Clone the repository
+```
+git clone https://github.com/YaroslavEls/youtube-sync-addon.git
+```
+2. Install dependencies
 ```
 npm install
 ```
-2. Rename `.env.example` file to `.env` (for local testing there is no need to change anything it it).
-3. Load extension to Firefox [[firefox docs](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/)]
+3. Rename `.env.example` file to `.env` (for local usage there is no need to change anything it it).
+4. Load extension to Firefox [[firefox docs](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/)]
     - Open Firefox
     - Enter "about:debugging" in the URL bar
     - Click "This Firefox"
     - Click "Load Temporary Add-on"
     - Open project directory and select manifest.json file.
-4. Run server
+5. Run server
 ```
 npm start
 ```
@@ -34,6 +38,6 @@ The interface:
 
 - The colored circle on top right indicates the current state of the connection. Green color -> everything cool. Red color -> problems with connection.
 - Button next to it is used to refresh connecting (e.g. to solve problems with it).
-- On the first screen (the first image) you can either create a new room or join an existing one by entering it's id.
-- After creating or joining the room, the interface will change (the second image). Here you can copy room id and share it to someone or leave the room.
+- On the first screen (the left image) you can either create a new room or join an existing one by entering it's id.
+- After creating or joining the room, the interface will change (the right image). Here you can copy room id and share it to someone or leave the room.
 - When you are in the room, YouTube video on your page will automatically be synchronized with all other members of the room.
