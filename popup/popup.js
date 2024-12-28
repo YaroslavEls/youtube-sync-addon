@@ -33,10 +33,9 @@ async function sendMessage(tab, action, room=null) {
         message.room = room;
     }
 
-    const res = await browser.tabs.sendMessage(tab.id, message);
-    
-    if (!res.success) {
-        $('comment').textContent = res.comment;
+    const error = await browser.tabs.sendMessage(tab.id, message);
+    if (error) {
+        $('comment').textContent = error.message;
     }
 }
 

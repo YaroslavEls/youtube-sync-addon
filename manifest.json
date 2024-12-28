@@ -3,18 +3,14 @@
     "name": "YouTube Sync",
     "version": "1.0",
     "description": "Synchronized YouTube watching.",
-    "permissions": ["tabs", "storage", "activeTab", "scripting"],
-    "background": {
-        "scripts": ["background.js"]
-    },
+    "permissions": ["tabs"],
     "browser_action": {
-    "default_popup": "popup.html",
-    "default_icon": "icon.png"
+        "default_popup": "popup/popup.html"
     },
     "content_scripts": [
         {
             "matches": ["*://*.youtube.com/*"],
-            "js": ["content.js"]
+            "js": ["content_scripts/content.js"]
         }
     ],
     "content_security_policy": "connect-src 'self' ws://localhost:8080; script-src 'self'; object-src 'self';"
